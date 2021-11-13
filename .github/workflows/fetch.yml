@@ -10,7 +10,7 @@ on:
 
 jobs:
   fetch:
-    name: Fetch election data
+    name: Fetch donations data
     runs-on: ubuntu-latest
 
     steps:

@@ -21,11 +21,12 @@ def get_data(lanternurl: str, dailyurl:str ):
     }
 
     response = requests.request("POST", daily_url, headers=headers, data=payload)
+    dailyMoney = round(float(response.json()["data"]["storyById"]["storyInitiativesByStoryId"]["nodes"][0]["totalAmountOfGifts"]))
 
     return {
         "data": {
           "lantern": money,
-          "daily": "$" + response.json()["data"]["storyById"]["storyInitiativesByStoryId"]["nodes"][0]["totalAmountOfGifts"]
+          "daily": f"${dailyMoney}",
         }
     }
 

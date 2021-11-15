@@ -31,7 +31,7 @@ def get_data(lanternurl: str, dailyurl:str ):
 
 
 def main():
-    lanternurl = "https://buckeyefunder.osu.edu/project/21918"
+    lanternurl = "https://buckeyefunder.osu.edu/project/28518"
     dailyurl=""
     data = get_data(lanternurl, dailyurl)
     with open("data.json", "w") as f:

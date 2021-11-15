@@ -25,7 +25,7 @@ def get_data(lanternurl: str, dailyurl:str ):
     return {
         "data": {
           "lantern": money,
-          "daily": "$" + response.json()["data"]["storyById"]["storyInitiativesByStoryId"]["nodes"][0]["totalNumberOfCalculatedItemsRaised"]
+          "daily": "$" + response.json()["data"]["storyById"]["storyInitiativesByStoryId"]["nodes"][0]["totalAmountOfGifts"]
         }
     }
 

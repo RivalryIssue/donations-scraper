@@ -31,5 +31,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           timestamp=$(date -u)
-          git commit -m "🗂 Fetchdonation data at ${timestamp}" || exit 0
+          git commit -m "🗂 Fetch donation data at ${timestamp}" || exit 0
           git push
